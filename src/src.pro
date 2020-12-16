@@ -10,6 +10,9 @@ TEMPLATE = lib
 CONFIG += qt plugin
 QT += qml quick svg
 
+message("modify the QT_INSTALL_QML and PLUGIN_IMPORT_PATH directories if needed")
+message("Currently: QT_INSTALL_QML = $$[QT_INSTALL_QML]")
+message("Currently: PLUGIN_IMPORT_PATH = $$PLUGIN_IMPORT_PATH")
 target.path = $$[QT_INSTALL_QML]/$$PLUGIN_IMPORT_PATH
 INSTALLS += target
 
